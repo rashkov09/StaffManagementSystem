@@ -46,7 +46,8 @@ public class Developer extends BaseEmployee{
 
 	@Override
 	public String toString() {
-		return "Developer{" +
+		return "Name: " + this.getName() +
+		       "Developer{" +
 		       "technology=" + technology +
 		       ", seniority=" + seniority +
 		       '}';

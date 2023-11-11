@@ -52,7 +52,9 @@ public class MainView implements ConsoleView {
 						System.out.println(employeeService.getAllEmployees());
 					}
 					case SEARCH -> {
-						System.out.println("This is search command");
+						System.out.println("Enter id:");
+						int id = ConsoleReader.readInt();
+						System.out.println(employeeService.getEmployeeById(id));
 					}
 					case FIRE -> {
 						System.out.println("This is fire command");

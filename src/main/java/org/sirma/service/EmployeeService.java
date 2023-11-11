@@ -80,4 +80,8 @@ public class EmployeeService {
 		employeeRepository.getAllEmployees().forEach(employee -> builder.append(employee.toString()).append(System.lineSeparator()));
 		return builder.toString();
 	}
+
+	public String getEmployeeById(int id) {
+		return employeeRepository.getEmployeeById(Long.parseLong(String.valueOf(id))).toString();
+	}
 }

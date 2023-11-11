@@ -11,6 +11,7 @@ public class MainView implements ConsoleView {
 
 	private final EmployeeService employeeService = new EmployeeService();
 	private static final String MAIN_MESSAGE = """
+                                            
 	                                           <--- Welcome to Staff Management System ---> 
 	                                                                                       
 	                                           Please, insert one of the available commands: 
@@ -62,7 +63,7 @@ public class MainView implements ConsoleView {
 
 					default -> System.out.println("Invalid command");
 				}
-
+				System.out.println(MAIN_MESSAGE);
 				commandInput = ConsoleReader.readString();
 			}
 		} catch (Exception e) {

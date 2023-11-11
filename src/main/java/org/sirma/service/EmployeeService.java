@@ -74,4 +74,10 @@ public class EmployeeService {
 	public void init() {
 		employeeRepository.loadData();
 	}
+
+	public String getAllEmployees() {
+		StringBuilder builder = new StringBuilder();
+		employeeRepository.getAllEmployees().forEach(employee -> builder.append(employee.toString()).append(System.lineSeparator()));
+		return builder.toString();
+	}
 }

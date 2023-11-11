@@ -49,7 +49,7 @@ public class MainView implements ConsoleView {
 						System.out.println("This is edit command");
 					}
 					case LIST -> {
-						System.out.println("This is list command");
+						System.out.println(employeeService.getAllEmployees());
 					}
 					case SEARCH -> {
 						System.out.println("This is search command");
